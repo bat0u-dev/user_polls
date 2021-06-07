@@ -30,6 +30,7 @@ public class QuestionEntity implements DatabaseModel {
     private String textAnswer;
     private Answer answer;
 
+//  TODO вынести в класс наследник?!
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<AnswerEntity> answers;
 }

@@ -15,10 +15,10 @@
         <module name="user_polls" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="hibernate" options="-parameters" />
       <module name="user_polls" options="-parameters" />
     </option>
   </component>
