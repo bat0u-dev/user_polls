@@ -19,9 +19,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin()
                 .loginPage("/login").loginProcessingUrl("/authenticateTheUser").permitAll();
     }
-
-    @Bean
-    protected TokenAuthenticationFilter tokenAuthenticationFilter() {
-        return new TokenAuthenticationFilter();
-    }
 }
